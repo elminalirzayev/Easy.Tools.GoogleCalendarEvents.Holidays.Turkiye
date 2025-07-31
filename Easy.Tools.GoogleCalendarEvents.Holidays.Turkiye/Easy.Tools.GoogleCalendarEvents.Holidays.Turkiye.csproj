@@ -23,7 +23,6 @@
 	<ItemGroup>
 		<PackageReference Include="Easy.Tools.GoogleCalendarEvents" Version="1.0.6" />
 	</ItemGroup>
-
 	<ItemGroup>
 		<None Include="README.md">
 			<Pack>true</Pack>
