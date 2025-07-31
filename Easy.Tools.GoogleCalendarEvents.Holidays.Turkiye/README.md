@@ -1,6 +1,6 @@
 ﻿# Easy.Tools.GoogleCalendarEvents
 
-This package allows you to retrieve public holiday events from [Google Public Calendars](https://developers.google.com/calendar) for Turkey.
+This package allows you to retrieve public holiday events from [Google Public Calendars](https://developers.google.com/calendar) for Turkiye.
 
 It uses Google Calendar API (v3) and provides a clean interface for fetching holiday data based on language preference.
 
