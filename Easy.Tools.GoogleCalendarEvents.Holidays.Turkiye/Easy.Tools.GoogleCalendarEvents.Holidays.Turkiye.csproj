@@ -10,7 +10,7 @@
 		<Version>1.0.0</Version>
 		<Authors>Elmin Alirzayev</Authors>
 		<Company>Easy Code Tools</Company>
-		<Description>A lightweight .NET library to fetch public events from Google Calendar using the Calendar API.</Description>
+		<Description>This package allows you to retrieve public holiday events from Google Public Calendars for Turkiye.</Description>
 		<PackageTags>google calendar holidays events dotnet turkiye turkey türkiye bayram tatil</PackageTags>
 		<RepositoryUrl>https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
