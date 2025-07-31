@@ -4,6 +4,9 @@ This package allows you to retrieve public holiday events from [Google Public Ca
 
 It uses Google Calendar API (v3) and provides a clean interface for fetching holiday data based on language preference.
 
+It builds on top of the core [`Easy.Tools.GoogleCalendarEvents`](https://www.nuget.org/packages/Easy.Tools.GoogleCalendarEvents) package, which handles low-level interaction with the Google Calendar API.
+
+
 ---
 
 ## Installation
@@ -47,14 +50,6 @@ Supported calendar languages:
 
 ---
 
-## Testing
-
-Unit tests are located under `Easy.Tools.GoogleCalendarEvents.Tests`.
-You can run the tests via:
-
-dotnet test
-
----
 
 ## Notes
 
