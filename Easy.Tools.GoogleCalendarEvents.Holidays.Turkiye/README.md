@@ -47,16 +47,6 @@ Supported calendar languages:
 
 ---
 
-## Testing
-
-Unit tests are located under `Easy.Tools.GoogleCalendarEvents.Tests`.
-You can run the tests via:
-
-dotnet test
-
-
----
-
 ## Notes
 
 * Calendar IDs are internally mapped using `CalendarLanguage` enum.
