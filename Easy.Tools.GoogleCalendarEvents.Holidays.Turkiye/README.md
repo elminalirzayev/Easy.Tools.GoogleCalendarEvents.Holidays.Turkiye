@@ -52,9 +52,8 @@ Supported calendar languages:
 Unit tests are located under `Easy.Tools.GoogleCalendarEvents.Tests`.
 You can run the tests via:
 
-```bash
 dotnet test
-```
+
 
 ---
 
