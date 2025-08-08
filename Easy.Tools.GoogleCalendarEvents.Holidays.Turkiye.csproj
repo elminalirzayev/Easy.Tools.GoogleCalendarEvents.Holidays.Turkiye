@@ -10,7 +10,7 @@
 
 		<Title>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</Title>
 		<PackageId>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</PackageId>
-		<Version>1.0.8</Version>
+		<Version>1.0.9</Version>
 		<Authors>Elmin Alirzayev</Authors>
 		<Company>Easy Code Tools</Company>
 		<Description>This package allows you to retrieve public holiday events from Google Public Calendars for Turkiye.</Description>
