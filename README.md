@@ -1,8 +1,8 @@
-﻿[![Build & Test](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/actions/workflows/build.yml/badge.svg)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/actions/workflows/build.yml)
-[![Build & Release](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/actions/workflows/release.yml/badge.svg)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/actions/workflows/release.yml)
-[![Build & Nuget Publish](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/actions/workflows/nuget.yml/badge.svg)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/actions/workflows/nuget.yml)
-[![Release](https://img.shields.io/github/v/release/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/releases)
-[![License](https://img.shields.io/github/license/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/blob/master/LICENSE.txt)
+﻿[![Build & Test](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye/actions/workflows/build.yml/badge.svg)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye/actions/workflows/build.yml)
+[![Build & Release](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye/actions/workflows/release.yml/badge.svg)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye/actions/workflows/release.yml)
+[![Build & Nuget Publish](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye/actions/workflows/nuget.yml/badge.svg)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye/actions/workflows/nuget.yml)
+[![Release](https://img.shields.io/github/v/release/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye/releases)
+[![License](https://img.shields.io/github/license/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye/blob/master/LICENSE.txt)
 
 
 # Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye
