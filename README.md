@@ -1,8 +1,11 @@
-﻿# Easy.Tools.GoogleCalendarEvents
+﻿# Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye
 
 This package allows you to retrieve public holiday events from [Google Public Calendars](https://developers.google.com/calendar) for Turkey.
 
 It uses Google Calendar API (v3) and provides a clean interface for fetching holiday data based on language preference.
+
+It builds on top of the core [`Easy.Tools.GoogleCalendarEvents`](https://www.nuget.org/packages/Easy.Tools.GoogleCalendarEvents) package, which handles low-level interaction with the Google Calendar API.
+
 
 ---
 
@@ -10,7 +13,7 @@ It uses Google Calendar API (v3) and provides a clean interface for fetching hol
 
 Install via NuGet:
 
-dotnet add package Easy.Tools.GoogleCalendarEvents
+dotnet add package Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye
 
 
 ---
@@ -47,16 +50,6 @@ Supported calendar languages:
 
 ---
 
-## Testing
-
-Unit tests are located under `Easy.Tools.GoogleCalendarEvents.Tests`.
-You can run the tests via:
-
-```bash
-dotnet test
-```
-
----
 
 ## Notes
 
