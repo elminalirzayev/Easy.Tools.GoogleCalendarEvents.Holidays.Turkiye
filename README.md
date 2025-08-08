@@ -1,4 +1,11 @@
-﻿# Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye
+﻿[![Build & Test](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/actions/workflows/build.yml/badge.svg)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/actions/workflows/build.yml)
+[![Build & Release](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/actions/workflows/release.yml/badge.svg)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/actions/workflows/release.yml)
+[![Build & Nuget Publish](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/actions/workflows/nuget.yml/badge.svg)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/actions/workflows/nuget.yml)
+[![Release](https://img.shields.io/github/v/release/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/releases)
+[![License](https://img.shields.io/github/license/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye)](https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Turkiye/blob/master/LICENSE.txt)
+
+
+# Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye
 
 This package allows you to retrieve public holiday events from [Google Public Calendars](https://developers.google.com/calendar) for Turkey.
 
@@ -49,7 +56,6 @@ Supported calendar languages:
 * `CalendarLanguage.English` → `en.turkish.official#holiday@group.v.calendar.google.com`
 
 ---
-
 
 ## Notes
 
