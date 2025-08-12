@@ -2,36 +2,62 @@
 
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
-		<!--<TargetFramework>net48</TargetFramework>-->
-		<TargetFrameworks>net8.0;net7.0;net6.0;net48;net47;netstandard2.1;netstandard2.0;</TargetFrameworks>
-		<LangVersion>10.0</LangVersion>
+		<!--<TargetFrameworks>net8.0</TargetFrameworks>-->
+		<TargetFrameworks>net9.0;net8.0;net7.0;net6.0;net48;net47;netstandard2.1;</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
+		<!-- Deterministic + SourceLink -->
+		<Deterministic>true</Deterministic>
+		<DebugType>portable</DebugType>
+		<EmbedAllSources>true</EmbedAllSources>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<EnableSourceLink>true</EnableSourceLink>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<IncludeSymbols>true</IncludeSymbols>
+		<IncludeSource>true</IncludeSource>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+
+		<!-- Package Info -->
 		<Title>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</Title>
+		<AssemblyTitle>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</AssemblyTitle>
+		<AssemblyName>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</AssemblyName>
 		<PackageId>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</PackageId>
-		<Version>1.0.9</Version>
+		<PackageId>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</PackageId>
+		<Version>1.0.11</Version>
 		<Authors>Elmin Alirzayev</Authors>
 		<Company>Easy Code Tools</Company>
+		<Copyright>Copyright © Elmin Alirzayev 2025</Copyright>
 		<Description>This package allows you to retrieve public holiday events from Google Public Calendars for Turkiye.</Description>
 		<PackageTags>google calendar holidays events dotnet turkiye turkey türkiye bayram tatil</PackageTags>
 		<RepositoryUrl>https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</RepositoryUrl>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryType>git</RepositoryType>
 		<PackageProjectUrl>https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReleaseNotes>-</PackageReleaseNotes>
 
+		<!-- Build -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<!--<GenerateDocumentationFile>true</GenerateDocumentationFile>-->
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
+		<LangVersion>10.0</LangVersion>
 
 	</PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="Easy.Tools.GoogleCalendarEvents" Version="1.0.8" />
-	</ItemGroup>
 	<ItemGroup>
 		<None Include="README.md">
 			<Pack>true</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
 	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Easy.Tools.GoogleCalendarEvents" Version="1.0.11" />
+	</ItemGroup>
+
 
 
 </Project>

@@ -18,16 +18,17 @@ namespace Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye.Service
         private readonly string _apiKey;
         private readonly HttpClient _httpClient;
 
-        public HolidayService(string apiKey)
+        public HolidayService(string apiKey, HttpClient? httpClient = null)
         {
             _apiKey = apiKey ?? throw new ArgumentNullException(nameof(apiKey));
+            _httpClient = httpClient ?? new HttpClient();
         }
         public async Task<IReadOnlyList<Item>> GetHolidaysAsync(CalendarLanguage language = CalendarLanguage.Turkish, CancellationToken cancellationToken = default)
         {
             if (!CalendarMappings.CalendarIds.TryGetValue(language, out var calendarId))
                 throw new ArgumentException($"Unsupported language '{language}'");
 
-            var eventService = new GoogleEventService(_apiKey, calendarId);
+            var eventService = new GoogleEventService(_apiKey, calendarId, _httpClient);
             return await eventService.GetEventsAsync(cancellationToken);
         }
     }
