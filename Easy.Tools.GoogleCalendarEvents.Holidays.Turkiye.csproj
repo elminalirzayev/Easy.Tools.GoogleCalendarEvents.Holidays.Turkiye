@@ -2,8 +2,7 @@
 
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
-		<!--<TargetFrameworks>net8.0</TargetFrameworks>-->
-		<TargetFrameworks>net9.0;net8.0;net7.0;net6.0;net48;net47;netstandard2.1;</TargetFrameworks>
+		<TargetFrameworks>net10.0;net9.0;net8.0;net7.0;net6.0;net48;net47;netstandard2.0;</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
@@ -25,7 +24,7 @@
 		<AssemblyName>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</AssemblyName>
 		<PackageId>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</PackageId>
 		<PackageId>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</PackageId>
-		<Version>1.0.11</Version>
+		<Version>1.0.12</Version>
 		<Authors>Elmin Alirzayev</Authors>
 		<Company>Easy Code Tools</Company>
 		<Copyright>Copyright © Elmin Alirzayev 2025</Copyright>
@@ -55,7 +54,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Easy.Tools.GoogleCalendarEvents" Version="1.0.11" />
+		<PackageReference Include="Easy.Tools.GoogleCalendarEvents" Version="1.0.12" />
 	</ItemGroup>
 
 
