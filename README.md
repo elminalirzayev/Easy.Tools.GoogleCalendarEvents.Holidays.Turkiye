@@ -19,7 +19,7 @@ It builds on top of the core [`Easy.Tools.GoogleCalendarEvents`](https://www.nug
 ## Installation
 
 Install via NuGet:
-```
+```bash
 dotnet add package Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye
 ```
 
