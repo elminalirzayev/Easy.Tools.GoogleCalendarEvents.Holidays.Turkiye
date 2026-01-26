@@ -2,9 +2,11 @@
 
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
-		<TargetFrameworks>net10.0;net9.0;net8.0;net7.0;net6.0;net48;net47;netstandard2.0;</TargetFrameworks>
+		<TargetFrameworks>net10.0;net9.0;net8.0;net7.0;net6.0;netstandard2.1;netstandard2.0;net48;net472</TargetFrameworks>
+
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
 
 		<!-- Deterministic + SourceLink -->
 		<Deterministic>true</Deterministic>
@@ -24,19 +26,28 @@
 		<AssemblyName>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</AssemblyName>
 		<PackageId>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</PackageId>
 		<PackageId>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</PackageId>
-		<Version>1.0.13</Version>
+		<Version>1.1.0</Version>
 		<PackageIcon>icon.png</PackageIcon>
 		<Authors>Elmin Alirzayev</Authors>
 		<Company>Easy Code Tools</Company>
 		<Copyright>Copyright © Elmin Alirzayev 2025</Copyright>
-		<Description>This package allows you to retrieve public holiday events from Google Public Calendars for Turkiye.</Description>
-		<PackageTags>google calendar holidays events dotnet turkiye turkey türkiye bayram tatil</PackageTags>
-		<RepositoryUrl>https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</RepositoryUrl>
+		<Description>A specialized .NET library to fetch official holidays and public events for Turkey (Türkiye) using Google Calendar API.</Description>
+		<PackageTags>turkey turkiye holidays bayramlar resmi-tatiller google calendar events dotnet</PackageTags>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<RepositoryType>git</RepositoryType>
 		<PackageProjectUrl>https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageReleaseNotes>-</PackageReleaseNotes>
+		<PackageReleaseNotes>
+			New Features:
+			- Added multi-language support! You can now fetch holidays in Turkish (default) or English using the 'HolidayLanguage' enum.
+
+			Improvements and Changes:
+			- Renamed 'HolidayService' to 'TurkeyHolidaysService' to prevent naming conflicts with other packages.
+			- Updated namespace structure to follows .NET best practices (.Services, .Enums).
+
+			Backward Compatibility:
+			- The old 'HolidayService' class is preserved but marked as [Obsolete]. Your existing code will continue to work with a warning, giving you time to migrate.
+		</PackageReleaseNotes>
 
 		<!-- Build -->
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
@@ -44,7 +55,6 @@
 		<NoWarn>$(NoWarn);1591</NoWarn>
 		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 		<SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
-		<LangVersion>latest</LangVersion>
 
 	</PropertyGroup>
 
@@ -60,7 +70,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Easy.Tools.GoogleCalendarEvents" Version="1.0.12" />
+		<PackageReference Include="Easy.Tools.GoogleCalendarEvents" Version="1.0.14" />
 	</ItemGroup>
 
 
