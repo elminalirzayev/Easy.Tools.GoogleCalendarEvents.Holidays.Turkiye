@@ -1,4 +1,4 @@
-﻿namespace Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye.Enums
+﻿namespace Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye
 {
     public enum HolidayLanguage
     {
@@ -10,6 +10,10 @@
         /// <summary>
         /// Resmi tatiller İngilizce getirilir (Örn: "Ramadan Feast").
         /// </summary>
-        English
+        English,
+        Azerbaijani,
+        Russian,
+        German,
+
     }
 }

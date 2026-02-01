@@ -7,7 +7,7 @@
 
 # Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye
 
-A dedicated .NET library for fetching **Official Public Holidays of Turkey (Türkiye Resmi Tatilleri)** directly from Google Calendar.
+A dedicated .NET library for fetching **Official Public Holidays of Turkiye (Türkiye Resmi Tatilleri)** directly from Google Calendar.
 
 > This library is an extension of [Easy.Tools.GoogleCalendarEvents](https://www.nuget.org/packages/Easy.Tools.GoogleCalendarEvents).
 
@@ -37,12 +37,12 @@ dotnet add package Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye
 By default, the service returns holiday names in Turkish (e.g., "Ramazan Bayramı").
 
 ```csharp
-using Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye.Services;
+using Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye;
 
 var apiKey = "YOUR_GOOGLE_API_KEY";
 
 // Initialize the service
-var service = new TurkeyHolidaysService(apiKey);
+var service = new TurkiyeHolidaysService(apiKey);
 
 // Fetch holidays
 var holidays = await service.GetHolidaysAsync();
@@ -59,11 +59,10 @@ foreach (var h in holidays)
 
 You can explicitly request holiday names in English (e.g., "Ramadan Feast") using the `HolidayLanguage` enum.
 ```csharp
-using Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye.Services;
-using Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye.Enums;
+using Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye;
 
 var apiKey = "YOUR_GOOGLE_API_KEY";
-var service = new TurkeyHolidaysService(apiKey);
+var service = new TurkiyeHolidaysService(apiKey);
 
 // Fetch holidays in English
 var holidays = await service.GetHolidaysAsync(HolidayLanguage.English);
@@ -75,22 +74,6 @@ foreach (var h in holidays)
 // Output: "- Ramadan Feast (2025-03-30)"
 ```
 
-### 3. Dependency Injection (ASP.NET Core)
-
-Designed for seamless integration with `HttpClientFactory`.
-```csharp
-using Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye.Services;
-// Program.cs
-using Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye.Services;
-
-builder.Services.AddHttpClient<TurkeyHolidaysService>(client =>
-{
-    // Optional: Configure timeouts or headers
-});
-
-builder.Services.AddSingleton(sp => 
-    new TurkeyHolidaysService("YOUR_API_KEY", sp.GetRequiredService<HttpClient>()));
-```
 
 ##  Migration Guide (v1.x -> v1.1+)
 
@@ -98,15 +81,15 @@ If you were using the older `HolidayService` class, **your code will still work*
 
 -   **Old Class:** `HolidayService` (Marked as Obsolete)
     
--   **New Class:** `TurkeyHolidaysService`
+-   **New Class:** `TurkiyeHolidaysService`
     
 
-We recommend updating your code to use `TurkeyHolidaysService` for better naming clarity and future support.
+We recommend updating your code to use `TurkiyeHolidaysService` for better naming clarity and future support.
 
 
 ## 🇹🇷 Covered Holidays
 
-Includes all official public holidays in Turkey:
+Includes all official public holidays in Turkiye:
 
 
 ## Requirements
@@ -117,6 +100,14 @@ Includes all official public holidays in Turkey:
 
 -   Internet access for fetching calendar data
 
+
+---
+
+## Contributing
+
+Contributions and suggestions are welcome. Please open an issue or submit a pull request.
+
+---
 
 ## License
 

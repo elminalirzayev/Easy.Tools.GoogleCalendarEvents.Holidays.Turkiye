@@ -1,27 +1,27 @@
-﻿using Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye.Enums;
-using Easy.Tools.GoogleCalendarEvents.Models;
-using Easy.Tools.GoogleCalendarEvents.Services;
-using System.Net.Http;
+﻿using System.Net.Http;
 
-namespace Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye.Services
+namespace Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye
 {
     /// <summary>
     /// Provides functionality to fetch official holidays for Turkey from Google Calendar.
     /// </summary>
-    public class TurkeyHolidaysService
+    public class TurkiyeHolidaysService
     {
         private readonly string _apiKey;
         private readonly HttpClient _httpClient;
 
         private const string CalendarIdTr = "tr.turkish#holiday@group.v.calendar.google.com";
+        private const string CalendarIdAz = "az.turkish#holiday@group.v.calendar.google.com";
+        private const string CalendarIdDe = "de.turkish#holiday@group.v.calendar.google.com";
+        private const string CalendarIdRu = "ru.turkish#holiday@group.v.calendar.google.com";
         private const string CalendarIdEn = "en.turkish.official#holiday@group.v.calendar.google.com";
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="TurkeyHolidaysService"/> class.
+        /// Initializes a new instance of the <see cref="TurkiyeHolidaysService"/> class.
         /// </summary>
         /// <param name="apiKey">Your Google Cloud Console API Key.</param>
         /// <param name="httpClient">Optional HttpClient for Dependency Injection.</param>
-        public TurkeyHolidaysService(string apiKey, HttpClient? httpClient = null)
+        public TurkiyeHolidaysService(string apiKey, HttpClient? httpClient = null)
         {
             _apiKey = apiKey ?? throw new ArgumentNullException(nameof(apiKey));
             _httpClient = httpClient ?? new HttpClient();
@@ -33,11 +33,15 @@ namespace Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye.Services
         /// <param name="language">Language of the holiday names (Turkish or English).</param>
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>List of holiday items.</returns>
-        public async Task<IReadOnlyList<Item>> GetHolidaysAsync(HolidayLanguage language = HolidayLanguage.Turkish, CancellationToken cancellationToken = default)
+        public async Task<IReadOnlyList<GoogleCalendarEvent>> GetHolidaysAsync(HolidayLanguage language = HolidayLanguage.Turkish, CancellationToken cancellationToken = default)
         {
             var calendarId = language switch
             {
                 HolidayLanguage.English => CalendarIdEn,
+                HolidayLanguage.Russian => CalendarIdRu,
+                HolidayLanguage.German => CalendarIdDe,
+                HolidayLanguage.Azerbaijani => CalendarIdAz,
+                HolidayLanguage.Turkish => CalendarIdTr,
                 _ => CalendarIdTr // Default Turkish
             };
 

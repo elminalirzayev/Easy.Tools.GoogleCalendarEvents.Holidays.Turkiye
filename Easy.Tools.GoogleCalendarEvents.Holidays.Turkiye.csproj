@@ -26,7 +26,7 @@
 		<AssemblyName>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</AssemblyName>
 		<PackageId>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</PackageId>
 		<PackageId>Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</PackageId>
-		<Version>1.1.0</Version>
+		<Version>1.1.1</Version>
 		<PackageIcon>icon.png</PackageIcon>
 		<Authors>Elmin Alirzayev</Authors>
 		<Company>Easy Code Tools</Company>
@@ -37,17 +37,7 @@
 		<RepositoryType>git</RepositoryType>
 		<PackageProjectUrl>https://github.com/elminalirzayev/Easy.Tools.GoogleCalendarEvents.Holidays.Turkiye</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageReleaseNotes>
-			New Features:
-			- Added multi-language support! You can now fetch holidays in Turkish (default) or English using the 'HolidayLanguage' enum.
-
-			Improvements and Changes:
-			- Renamed 'HolidayService' to 'TurkeyHolidaysService' to prevent naming conflicts with other packages.
-			- Updated namespace structure to follows .NET best practices (.Services, .Enums).
-
-			Backward Compatibility:
-			- The old 'HolidayService' class is preserved but marked as [Obsolete]. Your existing code will continue to work with a warning, giving you time to migrate.
-		</PackageReleaseNotes>
+		<PackageReleaseNotes> - </PackageReleaseNotes>
 
 		<!-- Build -->
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
@@ -70,7 +60,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Easy.Tools.GoogleCalendarEvents" Version="1.0.14" />
+		<PackageReference Include="Easy.Tools.GoogleCalendarEvents" Version="1.0.15" />
 	</ItemGroup>
 
 
